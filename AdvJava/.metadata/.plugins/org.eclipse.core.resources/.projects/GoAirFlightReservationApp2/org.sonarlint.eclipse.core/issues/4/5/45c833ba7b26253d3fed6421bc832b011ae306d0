@@ -1,0 +1,25 @@
+
+ˆ
+java:S19893"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ÝøáýHºnRMINORZVULNERABILITY
+d	java:S1069"9Replace this use of System.out or System.err by a logger.(Ü‹º¯H¼nRMAJORZ
+CODE_SMELL
+q
+java:S1128"@Remove this unused import 'com.cybage.service.AdminServiceImpl'.(Ì‰ÛÍþÿÿÿÿH¾nRMINORZ
+CODE_SMELL
+‡
+java:S19895"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ÝÄ–FH»nRMINORZVULNERABILITY
+k
+java:S1161/":Add the "@Override" annotation above this method signature(þ³‚”ûÿÿÿÿH¸nRMAJORZ
+CODE_SMELL
+{	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÝÄ–FH²nRMINORZ
+CODE_SMELL
+
+java:S1989("PHandle the following exception that could be thrown by "getWriter": IOException.(ÏÚ‚´H¶nRMINORZVULNERABILITY
+p
+java:S1128"=Remove this unused import 'com.cybage.service.IAdminService'.(Ë¼øó8×æà‰¤0HõrRMINORZ
+CODE_SMELL
+f
+java:S1161&":Add the "@Override" annotation above this method signature(÷¤‹úH´nRMAJORZ
+CODE_SMELL
+|	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÿÅðH±nRMINORZ
+CODE_SMELL

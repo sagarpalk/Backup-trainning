@@ -1,0 +1,22 @@
+package Abstraction;
+
+class Game//Parent
+{
+	//non abstract methods
+	public void start()
+	{
+		System.out.println("Game started!!!!");
+	}
+	public void stop()
+	{
+		System.out.println("Game Stoped!!!");
+	}
+	abstract public void run();
+}
+class G1_Game
+{
+	gp()
+}
+public class AbstractClass {
+
+}

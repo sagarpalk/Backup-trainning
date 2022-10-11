@@ -1,0 +1,111 @@
+
+p
+java:S1854L"?Remove this useless assignment to local variable "flight_date".(ñ­©ùùÿÿÿÿH©rRMAJORZ
+CODE_SMELL
+|	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô‰ÙùHrRMINORZ
+CODE_SMELL
+	java:S117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È°¢ÕøÿÿÿÿHšrRMINORZ
+CODE_SMELL
+`
+java:S1481H"/Remove this unused "flight_No1" local variable.(±ÒıËøÿÿÿÿH®rRMINORZ
+CODE_SMELL
+|	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Û„öH‰rRMINORZ
+CODE_SMELL
+|	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïˆªH‡rRMINORZ
+CODE_SMELL
+{
+java:S2095c"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÜÍË˜ûÿÿÿÿHrRBLOCKERZBUG
+|	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—òÚÔHŒrRMINORZ
+CODE_SMELL
+l
+java:S3516:"9Refactor this method to not always return the same value.(šˆè‹şÿÿÿÿH rRBLOCKERZ
+CODE_SMELL
+i	java:S106]"9Replace this use of System.out or System.err by a logger.(ôÙèĞøÿÿÿÿH¹rRMAJORZ
+CODE_SMELL
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëæ€‚ùÿÿÿÿH†rRMINORZ
+CODE_SMELL
+	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ­©ùùÿÿÿÿHrRMINORZ
+CODE_SMELL
+	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÚƒâøÿÿÿÿHrRMINORZ
+CODE_SMELL
+V
+java:S1481G"+Remove this unused "status" local variable.(îĞH¬rRMINORZ
+CODE_SMELL
+i	java:S106_"9Replace this use of System.out or System.err by a logger.(ôÙèĞøÿÿÿÿHºrRMAJORZ
+CODE_SMELL
+f
+java:S1128
+"5Remove this unused import 'com.cybage.model.Booking'.(Ø±û«úÿÿÿÿH»rRMINORZ
+CODE_SMELL
+|	java:S117m"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô‰ÙùH™rRMINORZ
+CODE_SMELL
+	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÚ§»ùÿÿÿÿH›rRMINORZ
+CODE_SMELL
+{
+java:S2095?"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÜÍË˜ûÿÿÿÿHŸrRBLOCKERZBUG
+_
+java:S1481F".Remove this unused "bookingId" local variable.(Ä¼¡öÿÿÿÿÿHªrRMINORZ
+CODE_SMELL
+l	java:S125N"<This block of commented-out lines of code should be removed.(Ãİ®»ûÿÿÿÿH¸rRMAJORZ
+CODE_SMELL
+	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÚ§»ùÿÿÿÿHŠrRMINORZ
+CODE_SMELL
+	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÒıËøÿÿÿÿH’rRMINORZ
+CODE_SMELL
+|	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”êòH”rRMINORZ
+CODE_SMELL
+	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á» ÅúÿÿÿÿHˆrRMINORZ
+CODE_SMELL
+a
+java:S1481I"0Remove this unused "flight_type" local variable.(‘§ß§ıÿÿÿÿH°rRMINORZ
+CODE_SMELL
+|	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïˆªH—rRMINORZ
+CODE_SMELL
+o
+java:S1854H">Remove this useless assignment to local variable "flight_No1".(±ÒıËøÿÿÿÿH¥rRMAJORZ
+CODE_SMELL
+p
+java:S1854I"?Remove this useless assignment to local variable "flight_type".(‘§ß§ıÿÿÿÿH¦rRMAJORZ
+CODE_SMELL
+{
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÜÍË˜ûÿÿÿÿHrRBLOCKERZBUG
+	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È°¢ÕøÿÿÿÿHrRMINORZ
+CODE_SMELL
+\
+java:S1481K"+Remove this unused "userId" local variable.(‡¼¾©úÿÿÿÿH´rRMINORZ
+CODE_SMELL
+^
+java:S1128"2Remove this unused import 'com.cybage.model.User'.(šóÊÖH½rRMINORZ
+CODE_SMELL
+e
+java:S1854G":Remove this useless assignment to local variable "status".(îĞH¤rRMAJORZ
+CODE_SMELL
+	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘§ß§ıÿÿÿÿH“rRMINORZ
+CODE_SMELL
+l
+java:S1854J"@Remove this useless assignment to local variable "flight_price".(”êòH§rRMAJORZ
+CODE_SMELL
+	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šˆè‹şÿÿÿÿH‘rRMINORZ
+CODE_SMELL
+	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á» ÅúÿÿÿÿHœrRMINORZ
+CODE_SMELL
+	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ­©ùùÿÿÿÿH•rRMINORZ
+CODE_SMELL
+	java:S117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ­©ùùÿÿÿÿH˜rRMINORZ
+CODE_SMELL
+n
+java:S1854F"=Remove this useless assignment to local variable "bookingId".(Ä¼¡öÿÿÿÿÿH£rRMAJORZ
+CODE_SMELL
+	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô˜ëÛşÿÿÿÿH‹rRMINORZ
+CODE_SMELL
+k
+java:S1854K":Remove this useless assignment to local variable "userId".(‡¼¾©úÿÿÿÿH¨rRMAJORZ
+CODE_SMELL
+a
+java:S1481L"0Remove this unused "flight_date" local variable.(ñ­©ùùÿÿÿÿH¶rRMINORZ
+CODE_SMELL
+|	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï„ÂH–rRMINORZ
+CODE_SMELL
+]
+java:S1481J"1Remove this unused "flight_price" local variable.(”êòH²rRMINORZ
+CODE_SMELL

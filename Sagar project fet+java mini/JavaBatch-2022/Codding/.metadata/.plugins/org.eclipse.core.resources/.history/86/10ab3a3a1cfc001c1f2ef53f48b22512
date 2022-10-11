@@ -1,0 +1,14 @@
+class MyThread1 implements Runnable
+{
+	public void run()
+	{
+		
+	}
+}
+public class ThreadCreationFirstWay 
+{
+	public static void main(String[] args) {
+		
+	}
+
+}

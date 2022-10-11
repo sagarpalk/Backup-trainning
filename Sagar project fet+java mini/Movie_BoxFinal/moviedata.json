@@ -1,0 +1,338 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "email": "demo@gmail.com",
+      "password": "124124"
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "124124",
+      "id": 2
+    },
+    {
+      "email": "a2@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "email": "test1@gmail.com",
+      "password": "124124",
+      "id": 4
+    },
+    {
+      "email": "test2@gmail.com",
+      "password": "124124",
+      "subtype": "Standard",
+      "id": 5
+    },
+    {
+      "email": "akshay@gmail.com",
+      "password": "Akshay@123",
+      "subscription": "Standard",
+      "id": 6
+    },
+    {
+      "email": "akshay@gmail.com",
+      "password": "Akshay@123",
+      "subscription": "Standard",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "email": "ajay@gmail.com",
+      "password": "Angular@123",
+      "subscription": "Prime"
+    },
+    {
+      "email": "angular@gmail.com",
+      "password": "Angular@123",
+      "subscription": "Prime",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "email": "java@gmail.com",
+      "password": "Collection@123",
+      "subscription": "Standard"
+    },
+    {
+      "id": 11,
+      "email": "team2_angular@gmail.com",
+      "password": "React@12345",
+      "subscription": "Standard"
+    },
+    {
+      "id": 12,
+      "email": "vaibhav@gmail.com",
+      "password": "Vaibhav@33",
+      "subscription": "Subscription"
+    },
+    {
+      "email": "virat@gmail.com",
+      "password": "Virat@77",
+      "subscription": "Prime",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "email": "rohit@gmail.com",
+      "password": "Rohit@777",
+      "subscription": "Subscription"
+    },
+    {
+      "id": 15,
+      "email": "sachin@gmail.com",
+      "password": "Sachin@777",
+      "subscription": "Prime"
+    },
+    {
+      "id": 16,
+      "email": "tom@gmail.com",
+      "password": "Tom@77777",
+      "subscription": "Standard"
+    },
+    {
+      "id": 17,
+      "email": "dhoni@gmail.com",
+      "password": "Dhoni@777",
+      "subscription": "Prime"
+    },
+    {
+      "email": "rohit@gmail.com",
+      "password": "Robin@77",
+      "subscription": "Prime",
+      "id": 18
+    }
+  ],
+  "movieData": [
+    {
+      "id": 1,
+      "profile": "Utilities/Action/Chakde.jpg",
+      "title": "Chakde India",
+      "rating": "8.4",
+      "Genre": "Action",
+      "video": "Utilities/v2.mp4",
+      "like": "102",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "Hi"
+    },
+    {
+      "id": 2,
+      "profile": "Utilities/Action/Hit.jpg",
+      "title": "Hit",
+      "rating": "6.4",
+      "Genre": "Action",
+      "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "like": "100",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 3,
+      "profile": "Utilities/Action/Jannat2.jpg",
+      "title": "Jannat2",
+      "rating": "8.7",
+      "Genre": "Action",
+      "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "like": "100",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 4,
+      "profile": "Utilities/Action/Major.jpg",
+      "title": "Major ",
+      "rating": "6.4",
+      "Genre": "Action",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 5,
+      "profile": "Utilities/Action/Rockstar.jpg",
+      "title": "Rockstar",
+      "rating": "7.1",
+      "Genre": "Action",
+      "video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 6,
+      "profile": "Utilities/Action/Sooryavanshi.jpg",
+      "title": "Sooryavanshi",
+      "rating": "6.2",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 7,
+      "profile": "Utilities/Action/Hit.jpg",
+      "title": "Ice Age adventure of buck 2",
+      "rating": "7.4",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 8,
+      "profile": "Utilities/Action/Chakde.jpg",
+      "title": "Hotel Transylvania: Transformania",
+      "rating": "9.1",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 9,
+      "profile": "Utilities/Action/Major.jpg",
+      "title": "Sing 2",
+      "rating": "6.0",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 10,
+      "profile": "Utilities/Action/Jannat2.jpg",
+      "title": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
+      "rating": "8.4",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 11,
+      "profile": "Utilities/Action/Rockstar.jpg",
+      "title": "Catwoman: Hunted ",
+      "rating": "6.4",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 12,
+      "profile": "Utilities/Action/Hit.jpg",
+      "title": "The Seven Deadly Sins: Cursed by Light",
+      "rating": "6.4",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 13,
+      "profile": "Utilities/Action/Chakde.jpg",
+      "title": "rons gone wrong",
+      "rating": "7.9",
+      "Genre": "kids",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 14,
+      "profile": "Utilities/Action/Major.jpg",
+      "title": "The 355",
+      "rating": "8.1",
+      "Genre": "Latest",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 15,
+      "profile": "Utilities/Action/Rockstar.jpg",
+      "title": "Moonfall  ",
+      "rating": "6.9",
+      "Genre": "Latest",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 16,
+      "profile": "Utilities/Action/Major.jpg",
+      "title": "nightmare alley",
+      "rating": "6.4",
+      "Genre": "Latest",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 17,
+      "profile": "Utilities/Action/Hit.jpg",
+      "title": "the kings daughter",
+      "rating": "7.1",
+      "Genre": "Latest",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 18,
+      "profile": "Utilities/Action/Major.jpg",
+      "title": "Jackness forever ",
+      "rating": "6.4",
+      "Genre": "Latest",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    },
+    {
+      "id": 19,
+      "profile": "Utilities/Action/Major.jpg",
+      "title": "Redeeming",
+      "rating": "6.4",
+      "Genre": "Latest",
+      "video": "Utilities/v2.mp4",
+      "like": "99",
+      "Release": "2018-April",
+      "intro": "Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the gang on a European vacation. However, Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight the havoc unleashed across the continent but all is not as it seems.",
+      "comment": "one of the best movie ever seen"
+    }
+  ]
+}

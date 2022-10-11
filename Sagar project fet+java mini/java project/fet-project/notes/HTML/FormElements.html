@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>!!!Form Elements!!!</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><label>Employee code</label></td>
+                <td><input type="number" name="emp_code"></td>
+            </tr>
+            <tr>
+                <td><label>Employee Name</label></td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><label>Employee Password</label></td>
+                <td><input type="password" name="psw"></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input type="datetime" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"><label>Male</label>
+                    <input type="radio" name="gender" value="Female"><label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Designation</label></td>
+                <td><select>
+                    <option>Selected</option>
+                    <option>Developer</option>
+                    <option>QA</option>
+                    <option>DBA</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Language</label></td>
+                <td><input type="checkbox" name="ch1" value="Java"><label>Java</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="ch2" value="Python"><label>Python</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="ch3" value=".Net"><label>.Net</label></td>
+            </tr>
+            <tr>
+                <td><label>Company</label></td>
+                <td>
+                    <input list="company" name="company">
+                    <datalist id="company">
+                    <option value="Cybage"></option>
+                    <option value="TCS"></option>
+                </datalist></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+                <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </body>
+</html>

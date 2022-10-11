@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function allowDrop(ev) {
+              ev.preventDefault();
+            }
+            
+            function drag(ev) {
+              ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function drop(ev) {
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    <style>
+        #div1{
+            height: 500px;
+            width: 500px;
+            padding: 10px;
+            border: solid 7px blue;
+        }
+    </style>
+    </head>
+    <body>
+  <!--      <div id="div1" ondrop="drop(event)" ondragover="allowDrop()"></div>
+        <br><br><br>
+        <img id="drag1" src="fonder_html.png" height="200px" ondragstart="drag(event)" width="200px" draggable="true">
+   -->
+        <canvas id="c1" height="200px" width="200px" style="border: solid 7px blue;"></canvas>
+        <script>
+            var c = document.getElementById("c1");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello World", 10, 50);
+            
+            //Circle
+            //ctx.beginPath();
+            //ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+
+            //Line
+            //ctx.moveTo(0,0)
+            //ctx.lineTo(200,200);
+            //ctx.stroke();
+        </script>
+    </body>
+</html>

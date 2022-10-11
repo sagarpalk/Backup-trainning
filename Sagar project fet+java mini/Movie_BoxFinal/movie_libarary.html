@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./Style/Movie_Library/movie_library.css">
+</head>
+
+
+<body>
+
+  <!-- <img src="Utilities/Action/A1.jpg" alt=""> -->
+  <!--navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div class="media">
+          <button class="mr-3 rounded-circle" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <img src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png" class="mr-3 rounded-pill"
+              alt="profile image" style="max-width: 40px" id="output2"></button>
+          <Span class="media-body">
+            <small id="userMail">vishal@gmail.com </small>
+          </span>
+        </div>
+
+      </a>
+      <input id="myInput" type="text" class="form-control form-rounded border border-danger" type="text"
+        placeholder="Search any Movie..."> <i class="bx bx-search"></i>
+    </div>
+    </ul>
+    </div>
+    </div>
+
+  </nav>
+  <!--navbar end -->
+
+  <!-- navbar for the  allmovie,(action, thirlller ,romantic, kids), latest popular, toprated-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" id="allmovies" href="#">All Movies</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="popular" href="#">popular </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="latest" href="#"> Latest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="top" href="#">Top rated</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="romantic" href="#">Romantic </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="action" href="#">Action </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="thriller" href="#">
+              Thriller </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="kids" href="#">
+              Kids </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Languages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" id="marathi" href="#">Marathi</a></li>
+              <li><a class="dropdown-item" id="hindi" href="#">Hindi </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+            </ul>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--cards-->
+  <!--off canvas start -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-center" id="offcanvasScrollingLabel">vishal@gmail.com </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <div class="profile-pic">
+            <label class="-label" for="file">
+              <span class="glyphicon glyphicon-camera"></span>
+           
+            </label>
+           
+            <img class="prof" src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png"
+              alt="Generic placeholder image" style="max-width:180px" id="output">
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Membership: <strong id="subtype"> Prime</strong> </a>
+        </li>
+       
+        <li class="nav-item m-2">
+          <div class="d-grid gap-2">
+            <a href="./HTML/Profile/updateProfile.html">
+              <button class="btn btn-outline-primary form-control" type="button">Update profile</button>
+            </a>
+          </div>
+        </li>
+
+      
+        <li class="nav-item m-2">
+          <div class="d-grid gap-2">
+            <a href="./index.html">
+              <button class="btn btn-outline-danger form-control" id="logout" type="button">Logout</button>
+
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--off canvas end -->
+
+  <br>
+  <section class="wrapper">
+    <div class="container">
+      <div class="row" id="myCards">
+
+        <!--card should be fethced here-->
+      
+      </div>
+
+      <div class="col-sm-4 ">
+        <div class="card">
+          <img src="Utilities/Action/Major.jpg" alt="Sandwich" style="width:100%">
+          <div class="card-body">
+            <h4 class="text-danger">The Terminator </h4>
+            <button type="button" class="btn btn-outline-primary "><i class="fa fa-play"
+                style="font-size:30px;color:rgb(18, 224, 197)"></i></button>
+            <button type="button" class="btn btn-outline-info "><i class="fa fa-heart"
+                style="font-size:30px;color:red"></i></button>
+            <button type="button" class="btn btn-outline-warning "><i class="fa fa-bookmark-o"
+                style="font-size:30px;color:red"></i></button>
+            <br>
+
+            <small>Latest</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="./movie_library.js"></script>
+  <script>
+ 
+  
+    var userArr = JSON.parse(localStorage.getItem("currusr"));
+    document.getElementById("userMail").innerHTML = userArr.email;
+    document.getElementById("offcanvasScrollingLabel").innerHTML = userArr.email;
+ 
+    
+    
+    document.getElementById("subtype").innerHTML = userArr.subscription;
+
+
+    $("#logout").click(function(){
+//localStorage.removeItem("currusr");
+      localStorage.clear();
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+package Inheritance;
+class Student
+{
+	int id;
+	String name;
+	float per;
+	Date dob;//reference
+	
+	Student(int id,String name,
+			float per,Date dob)
+	{
+		this.id=id;
+		this.name=name;
+		this.per=per;
+		this.dob=dob;//Object
+	}
+	public String toString()
+	{
+		
+	}
+}
+public class Aggregation
+{
+	public static void main(String[] args) {
+		
+	}
+
+}

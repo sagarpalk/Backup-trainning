@@ -1,0 +1,36 @@
+
+Jul 21, 2022 16:07:26.46 NEW SESSION
+Jul 21, 2022 16:07:26.46 [14424:16528:0721/160726.457:ERROR:device_event_log_impl.cc(214)] [16:07:26.457] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+Jul 21, 2022 16:08:23.13 [14424:12024:0721/160823.110:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 21, 2022 17:25:11.89 [14424:16528:0721/172511.899:ERROR:device_event_log_impl.cc(214)] [17:25:11.900] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 21, 2022 21:08:20.81 [14424:8360:0721/210820.787:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 22, 2022 02:08:20.98 [14424:20776:0722/020820.986:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 22, 2022 07:08:21.17 [14424:12320:0722/070821.154:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 22, 2022 12:08:21.36 [14424:12688:0722/120821.344:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 22, 2022 17:08:21.53 [14424:22040:0722/170821.530:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 22, 2022 17:22:51.45 [14424:16528:0722/172251.420:ERROR:interface_endpoint_client.cc(665)] Message 3 rejected by interface blink.mojom.Widget
+Jul 22, 2022 17:22:51.47 [14424:16528:0722/172251.422:ERROR:interface_endpoint_client.cc(665)] Message 6 rejected by interface blink.mojom.WidgetHost
+Jul 22, 2022 17:22:51.54 [14424:16528:0722/172251.422:ERROR:interface_endpoint_client.cc(665)] Message 7 rejected by interface blink.mojom.WidgetHost
+Jul 22, 2022 17:22:51.63 [14424:16528:0722/172251.422:ERROR:interface_endpoint_client.cc(665)] Message 3 rejected by interface blink.mojom.Widget
+Jul 22, 2022 17:22:51.68 [14424:16528:0722/172251.422:ERROR:interface_endpoint_client.cc(665)] Message 6 rejected by interface blink.mojom.WidgetHost
+Jul 22, 2022 17:22:51.77 [14424:16528:0722/172251.422:ERROR:interface_endpoint_client.cc(665)] Message 7 rejected by interface blink.mojom.WidgetHost
+Jul 22, 2022 17:22:51.86 [14424:16528:0722/172251.464:ERROR:interface_endpoint_client.cc(665)] Message 3 rejected by interface blink.mojom.Widget
+Jul 22, 2022 17:22:51.87 [14424:16528:0722/172251.464:ERROR:interface_endpoint_client.cc(665)] Message 6 rejected by interface blink.mojom.WidgetHost
+Jul 22, 2022 17:22:51.91 [14424:16528:0722/172251.464:ERROR:interface_endpoint_client.cc(665)] Message 7 rejected by interface blink.mojom.WidgetHost
+Jul 22, 2022 17:22:51.98 [14424:16528:0722/172251.465:ERROR:interface_endpoint_client.cc(665)] Message 3 rejected by interface blink.mojom.Widget
+Jul 22, 2022 17:22:52.06 [14424:16528:0722/172251.465:ERROR:interface_endpoint_client.cc(665)] Message 3 rejected by interface blink.mojom.Widget
+
+Jul 25, 2022 16:55:15.05 NEW SESSION
+Jul 25, 2022 16:55:15.05 [16692:13552:0725/165515.015:ERROR:device_event_log_impl.cc(214)] [16:55:15.014] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+Jul 25, 2022 16:56:05.07 [16692:944:0725/165605.068:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 25, 2022 21:46:23.68 [16692:13552:0725/214623.267:ERROR:device_event_log_impl.cc(214)] [21:46:23.260] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 25, 2022 21:56:05.26 [16692:23136:0725/215605.262:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 26, 2022 02:56:05.43 [16692:7420:0726/025605.433:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 26, 2022 07:56:05.73 [16692:13516:0726/075605.715:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 26, 2022 12:56:06.32 [16692:11884:0726/125606.309:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 26, 2022 13:40:30.46 [16692:13552:0726/134030.454:ERROR:device_event_log_impl.cc(214)] [13:40:30.453] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+
+Jul 28, 2022 01:27:59.21 NEW SESSION
+Jul 28, 2022 01:27:59.21 [3440:10744:0728/012759.210:ERROR:device_event_log_impl.cc(214)] [01:27:59.210] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+Jul 28, 2022 01:28:53.64 [3440:10460:0728/012853.633:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jul 28, 2022 02:13:26.84 [3440:10744:0728/021326.786:ERROR:device_event_log_impl.cc(214)] [02:13:26.783] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)

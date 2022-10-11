@@ -1,0 +1,5 @@
+1. Understand the structure of .git folder
+2. Initialize an empty repoitory for your project
+3. Adding the file in staging area
+4. Commiting the file
+5. Adding multiple files

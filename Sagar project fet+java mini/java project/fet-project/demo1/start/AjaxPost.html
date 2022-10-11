@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script >
+    $(document).ready(function () {
+      $("button").click(function () {
+        $.post("http://localhost:3000/emp1",
+        {
+            
+             name:$("#one").val(),
+            //name:"sdds",
+             password:$("#two").val()
+            //password:"qewwew"
+          }
+        ,
+          
+          function (data, status) {
+            alert("Data: " + data + "\nStatus: " + status);
+          });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="info">
+    Name:<input type="text" id="one" name="name">
+    Password:<input type="password" id="two" name="password"><br>
+    <br>
+  <button>Send an HTTP POST request to a page and get the result back</button>
+    
+  </div>
+
+</body>
+
+</html>

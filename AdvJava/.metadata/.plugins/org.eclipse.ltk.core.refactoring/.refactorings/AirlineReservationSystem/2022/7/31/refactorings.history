@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cybage.service.BookingService&apos; to &apos;IBookingService&apos;&#x0D;&#x0A;- Original project: &apos;AirlineReservationSystem&apos;&#x0D;&#x0A;- Original element: &apos;com.cybage.service.BookingService&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cybage.service.IBookingService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BookingService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.cybage.service{BookingService.java[BookingService" matchStrategy="1" name="IBookingService" qualified="false" references="true" similarDeclarations="false" stamp="1658666196609" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,54 @@
+
+}
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ãìH°nRMAJORZBUG
+\
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±ÄøÿÿÿÿH¥nRMINORZ
+CODE_SMELL
+i	java:S1060"9Replace this use of System.out or System.err by a logger.(í‘«áıÿÿÿÿH–nRMAJORZ
+CODE_SMELL
+g
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ôH§nRMINORZ
+CODE_SMELL
+d	java:S1063"9Replace this use of System.out or System.err by a logger.(ÙåšîH˜nRMAJORZ
+CODE_SMELL
+d	java:S1067"9Replace this use of System.out or System.err by a logger.(é¬¦ HnRMAJORZ
+CODE_SMELL
+d	java:S1069"9Replace this use of System.out or System.err by a logger.(Á¨‘ñHnRMAJORZ
+CODE_SMELL
+	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆšÁöøÿÿÿÿHnRMINORZ
+CODE_SMELL
+µ
+java:S1186C"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ş³‚”ûÿÿÿÿHnRCRITICALZ
+CODE_SMELL
+\
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒH£nRMINORZ
+CODE_SMELL
+k
+java:S1161C":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿH¡nRMAJORZ
+CODE_SMELL
+
+java:S1989."YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ÆšÁöøÿÿÿÿH•nRMINORZVULNERABILITY
+d	java:S106/"9Replace this use of System.out or System.err by a logger.(¹¨«ÛH—nRMAJORZ
+CODE_SMELL
+•
+java:S1989<"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ÜÕˆêøÿÿÿÿH nRMINORZVULNERABILITY
+c	java:S1062"9Replace this use of System.out or System.err by a logger.(ÀÕÉ]H™nRMAJORZ
+CODE_SMELL
+f
+java:S1161,":Add the "@Override" annotation above this method signature(÷¤‹úH“nRMAJORZ
+CODE_SMELL
+i	java:S1066"9Replace this use of System.out or System.err by a logger.(í‘«áıÿÿÿÿHŸnRMAJORZ
+CODE_SMELL
+g	java:S125"<This block of commented-out lines of code should be removed.(™ ·¬H‘nRMAJORZ
+CODE_SMELL
+o
+java:S1128">Remove this unused import 'com.cybage.model.BookTicketFlight'.(É‰úøÿÿÿÿH©nRMINORZ
+CODE_SMELL
+}
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÙÏû¨H¯nRMAJORZBUG
+r
+java:S1128"?Remove this unused import 'com.cybage.service.IBookingService'.(å„ˆÊ8£íñ‰¤0HósRMINORZ
+CODE_SMELL
+v
+java:S1128">Remove this unused import 'com.cybage.service.IFlightService'.(æ‰ó³øÿÿÿÿ8£íñ‰¤0HõsRMINORZ
+CODE_SMELL

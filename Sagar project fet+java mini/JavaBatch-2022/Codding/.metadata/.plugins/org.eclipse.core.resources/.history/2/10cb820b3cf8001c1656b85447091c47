@@ -1,0 +1,56 @@
+package Abstraction;
+
+import Polymorphism.G1_Game;
+import Polymorphism.G2_Game;
+
+abstract class Game//Parent
+{
+	//non abstract methods
+	public void start()
+	{
+		System.out.println("Game started!!!!");
+	}
+	public void stop()
+	{
+		System.out.println("Game Stoped!!!");
+	}
+	abstract public void run();//Abstract Method --rule
+}
+class G1_Game extends Game
+{
+	public void run()
+	{
+		System.out.println("G1_Game Running");
+	}
+}
+class G2_Game extends Game
+{
+	public void run()
+	{
+		System.out.println("G2_Game is running");
+	}
+}
+
+public class AbstractClass
+{
+	public static void main(String[] args) {
+		G1_Game g1=new G1_Game();
+		g1.start();
+		g1.g1_run();
+		g1.stop();
+		
+		G2_Game g2=new G2_Game();
+		g2.start();
+		g2.g2_run();
+		g2.stop();
+	}
+
+}
+
+
+
+
+
+
+
+

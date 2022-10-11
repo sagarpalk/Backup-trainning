@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_seat.css" />
+  <!-- <link rel="stylesheet" href="./style_home.css"> -->
+  <title>Movie Seat Booking</title>
+</head>
+
+<body>
+  <div class="navbar" style="margin-top:-110px">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <h1 class="logo"><a href="bookshow.web.app" style="text-decoration: none; color: #4dbf00;">Bookyourshow</h1></a>
+      </div>
+      <div class="menu-container">
+        <ul class="menu-list">
+          <li><input type="search" class="search" name="search"
+              placeholder="   Search any movie you want to book ...."><a href="#"><i
+                class="search-icon fas fa-search"></i></a></li>
+          <li class="menu-list-item active">Home</li>
+          <li class="menu-list-item"><a style="text-decoration: none;" href="bookyourshow/all_movies.html">Movies</a>
+          </li>
+          <li class="menu-list-item">Series</li>
+          <li class="menu-list-item">Popular</li>
+          <li class="menu-list-item">Trends</li>
+
+        </ul>
+      </div>
+      <div class="profile-container">
+        <div class="profile-text-container">
+          <span>Hi,</span>
+          <span id="result"> </span>
+          <a style="text-decoration: none;" href="bookyourshow/login.html" id="login">Login</a>
+        </div>
+        <div class="toggle">
+          <i class="fas fa-moon toggle-icon"></i>
+          <i class="fas fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="movie-container">
+    <label>Movie : <span id="movie"></span></label>
+  </div>
+
+  <ul class="showcase">
+    <li>
+      <div class="seat"></div>
+      <small>N/A</small>
+    </li>
+
+    <li>
+      <div class="seat selected"></div>
+      <small>Selected</small>
+    </li>
+
+    <li>
+      <div class="seat sold"></div>
+      <small>Occupied</small>
+    </li>
+  </ul>
+
+  <div class="container">
+    <div class="screen"></div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+  </div>
+
+  <p class="text">
+    You have selected <span id="count">0</span> seats
+  </p>
+  <script src="script_seat.js"></script>
+  <form action="./checkout.html">
+    <input type="submit" value="BOOK NOW" onclick="passvalues();" class="btn">
+  </form>
+  <style>
+    .btn {
+      height: 40px;
+      background-color: #4dbf00;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: grab;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 60px;
+      background-color: black;
+      position: sticky;
+      top: 0;
+    }
+
+    .search {
+      width: 300px;
+      height: 29px;
+      border-radius: 20px;
+      margin-left: 20px;
+      margin-top: 7px;
+    }
+
+    .search-icon {
+      color: #000;
+      margin-left: -25px;
+      margin-right: 59px;
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      height: 100%;
+      color: black;
+      background-color: white;
+      font-family: "Sen", sans-serif;
+    }
+
+    .logo-container {
+      flex: 1;
+    }
+
+    .logo {
+      font-size: 30px;
+      color: #4dbf00;
+    }
+
+    .menu-container {
+      flex: 6;
+    }
+
+    .menu-list {
+      display: flex;
+      list-style: none;
+    }
+
+    .menu-list-item {
+      margin-right: 30px;
+      margin-top: 5px;
+    }
+
+    .menu-list-item.active {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .profile-container {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .profile-text-container {
+      margin: 0 20px;
+    }
+
+    .profile-picture {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .toggle {
+      width: 40px;
+      height: 20px;
+      background-color: black;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+    }
+
+    .toggle-icon {
+      color: goldenrod;
+    }
+
+    .toggle-ball {
+      width: 18px;
+      height: 18px;
+      background-color: white;
+      position: absolute;
+      right: 1px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 1s ease all;
+    }
+
+    .container.active {
+      background-color: black;
+    }
+
+    .movie-list-title.active {
+      color: white;
+    }
+
+    .navbar-container.active {
+      background-color: black;
+
+      color: white;
+    }
+
+    .sidebar.active {
+      background-color: black;
+    }
+
+    .left-menu-icon.active {
+      color: black;
+    }
+
+    .toggle.active {
+      background-color: black;
+    }
+
+    .toggle-ball.active {
+      background-color: gray;
+      transform: translateX(-20px);
+    }
+  </style>
+</body>
+
+</html>

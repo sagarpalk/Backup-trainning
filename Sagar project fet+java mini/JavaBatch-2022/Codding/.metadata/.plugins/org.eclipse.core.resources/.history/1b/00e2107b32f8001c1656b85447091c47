@@ -1,0 +1,13 @@
+package Polymorphism;
+class Shape
+{
+	float ans;
+	void area(float r)
+	{
+		ans=3.14*r*r;
+		System.out.println("Area of the Circle is :"+ans);
+	}
+}
+public class MethodOverloading {
+
+}

@@ -1,0 +1,12 @@
+h3{
+    background-color: gold;
+    color: crimson;
+    text-align: center;
+    text-transform: capitalize;
+}
+p{
+    background-color: black;
+    color: gold;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

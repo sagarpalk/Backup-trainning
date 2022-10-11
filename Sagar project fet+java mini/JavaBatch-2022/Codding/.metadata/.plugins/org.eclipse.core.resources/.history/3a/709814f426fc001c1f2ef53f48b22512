@@ -1,0 +1,35 @@
+class PrintTable
+{
+	public void table(int no)
+	{
+		for(int i=0;i<=10;i++)
+		{
+			System.out.println(no*i);
+			try
+			{
+				Thread.sleep(3000);
+			}
+			catch (InterruptedException e) {
+			System.out.println(e);
+			}
+		}
+	}
+}
+public class ThreadSyncronization 
+{
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

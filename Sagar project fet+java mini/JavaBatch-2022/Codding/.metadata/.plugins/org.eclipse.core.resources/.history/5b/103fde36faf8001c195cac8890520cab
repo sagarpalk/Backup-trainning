@@ -1,0 +1,15 @@
+package FunctionalInterface;
+
+@FunctionalInterface
+interface shape
+{
+	void area();
+}
+
+public class FunctionalInterfaceExample
+{
+	public static void main(String[] args) {
+		
+	}
+
+}

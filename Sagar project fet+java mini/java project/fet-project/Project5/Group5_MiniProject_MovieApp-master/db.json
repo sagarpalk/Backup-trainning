@@ -1,0 +1,74 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "email": "vishal@gmail.com",
+      "password": "123456",
+      "name": "Vishal",
+      "mobile": "9876543210"
+    },
+    {
+      "id": 2,
+      "email": "sagar@gmail.com",
+      "password": "123456",
+      "name": "Sagar",
+      "mobile": "9876543240"
+    },
+    {
+      "email": "akshay@gmail.com",
+      "password": "12345",
+      "name": "Akshay",
+      "mobile": "9857411",
+      "id": 3
+    },
+    {
+      "email": "vaibhav@gmail.com",
+      "password": "1234",
+      "name": "Vaibhav",
+      "mobile": "9857444",
+      "id": 4
+    },
+    {
+      "email": "virat@gmail.com",
+      "password": "",
+      "name": "Virat",
+      "mobile": "987456",
+      "id": 5
+    },
+    {
+      "email": "rohit@gmail.com",
+      "password": "",
+      "name": "Rohit",
+      "mobile": "987456",
+      "id": 6
+    },
+    {
+      "email": "rishab@gmail.com",
+      "password": "123456",
+      "name": "Rishab",
+      "mobile": "987456",
+      "id": 7
+    },
+    {
+      "email": "raj@gmail.com",
+      "password": "123456",
+      "name": "Raj",
+      "mobile": "987456",
+      "id": 8
+    },
+    {
+      "email": "anurag@gmail.com",
+      "password": "123456",
+      "name": "Anurag",
+      "mobile": "9876543211",
+      "id": 9
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "movieName": "RRR",
+      "path": "Movies/Video.mp4"
+    }
+  ]
+}

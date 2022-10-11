@@ -1,0 +1,27 @@
+
+{
+java:S2095."OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ô•ºéüÿÿÿÿHƒxRBLOCKERZBUG
+	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎîÉ§ÿÿÿÿÿH÷wRMINORZ
+CODE_SMELL
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô˜ëÛşÿÿÿÿHÿwRMINORZ
+CODE_SMELL
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÚ§»ùÿÿÿÿHùwRMINORZ
+CODE_SMELL
+¼
+java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÎîÉ§ÿÿÿÿÿ8İ¿Ì‰¤0HûwRCRITICALZ
+CODE_SMELL
+i	java:S106>"9Replace this use of System.out or System.err by a logger.(âí¿·şÿÿÿÿH„xRMAJORZ
+CODE_SMELL
+{
+java:S2095O"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¡ŠÉ»şÿÿÿÿH…xRBLOCKERZBUG
+W
+java:S1168&"+Return an empty collection instead of null.(¥¹ïH€xRMAJORZ
+CODE_SMELL
+	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÕÏÇşÿÿÿÿHøwRMINORZ
+CODE_SMELL
+i	java:S106S"9Replace this use of System.out or System.err by a logger.(ˆ¬öğûÿÿÿÿHşwRMAJORZ
+CODE_SMELL
+v
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‘÷°¦HúwRBLOCKERZBUG
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºŒå¹ÿÿÿÿÿHıwRMINORZ
+CODE_SMELL

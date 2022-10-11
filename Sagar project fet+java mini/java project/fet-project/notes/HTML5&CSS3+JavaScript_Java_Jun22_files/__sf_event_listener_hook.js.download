@@ -1,0 +1,76 @@
+function __sf__initEventListenersHook() {
+	var target;
+	if (typeof EventTarget !== 'undefined') {
+		target = EventTarget;
+	}
+	else if (typeof Window !== 'undefined') {
+		target = Window;
+	}
+	else {
+		return;
+	}
+	
+	if (typeof target.prototype.__sf__addEventListenerBase !== 'undefined') {
+		return;
+	}
+	
+	target.prototype.__sf__addEventListenerBase = target.prototype.addEventListener;
+	
+	target.prototype.addEventListener = function(type, listener)
+	{
+	    // Add listener to the listeners list
+	    if(!this.EventDict) { 
+	    	this.EventDict = {}; 
+	    }
+	    this.__sf__addEventListenerBase.apply(this, arguments);
+	    if(!this.EventDict[type]) { 
+	    	this.EventDict[type] = []; 
+	    }
+	    var list = this.EventDict[type];
+	    for(var index = 0; index != list.length; index++)
+	    {
+	        if(list[index] === listener) { return; }
+	    }
+	    list.push(listener);
+	};
+	
+	target.prototype.removeAllEventListeners = function(type)
+	{
+		if(!this.EventDict) { 
+			this.EventDict = {}; 
+		}
+	    if(!this.EventDict[type]) { 
+	    	return; 
+	    }
+		var list = this.EventDict[type];
+		
+		for(var index = 0; index != list.length; index++) {
+			this.__sf__removeEventListenerBase(type, list[index]);
+		}
+		this.EventDict[type] = [];
+	};
+	
+	target.prototype.__sf__removeEventListenerBase = target.prototype.removeEventListener;
+	target.prototype.removeEventListener = function(type, listener)
+	{
+	    this.__sf__removeEventListenerBase.apply(this, arguments); 
+		
+		if(!this.EventDict) {
+	    	return; 
+    	}
+		
+	    if(!this.EventDict[type]) { 
+	    	return; 
+	    }
+	    var list = this.EventDict[type];
+	    for(var index = 0; index != list.length; index++) {
+	        var item = list[index];
+			if(item === listener)
+	        {
+	            list.splice(index, 1); 
+	            break;
+	        }
+	    }
+	};
+}
+__sf__initEventListenersHook();

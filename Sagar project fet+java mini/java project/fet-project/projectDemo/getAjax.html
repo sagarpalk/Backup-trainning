@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://localhost:3000/profile", 
+    function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+      for(var i=0;i<data.length;i++)
+      {
+          var obj=data[i];
+          document.getElementById("info")
+          .innerHTML+=
+          obj.id+"     "+obj.name+"<br>";
+      }
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<!-- <button>Send an HTTP GET request to a page and get the result back</button> -->
+<button>Submit</button>
+<div id="info">
+Name:<input type="text" id="textOne" name="name">
+Password:<input type="password" id="pass" name="password">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function select(){
+        var x =document.getElementById("p1");
+         document.querySelector('p.p1');
+        x.selectionStart=2;
+        x.selectionEnd=9;
+        x.style.color = 'Red';
+        
+        }
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <p class="p1" id="p1">Cybage Software PVT LTD</p>
+    </div>
+    <button onclick="select()">Color</button>
+</body>
+</html>

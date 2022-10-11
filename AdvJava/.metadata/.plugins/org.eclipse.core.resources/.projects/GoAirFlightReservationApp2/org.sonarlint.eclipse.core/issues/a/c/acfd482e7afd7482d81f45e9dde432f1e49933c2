@@ -1,0 +1,8 @@
+
+	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­àå±ùÿÿÿÿHªxRMINORZ
+CODE_SMELL
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş²ÅüÿÿÿÿH«xRMINORZ
+CODE_SMELL
+g	java:S125"<This block of commented-out lines of code should be removed.(Åñë¯H¬xRMAJORZ
+CODE_SMELL

@@ -1,0 +1,10 @@
+class Employee
+{
+	//data members(variables)
+	int emp_code=26695;
+	String name="Sonali Mindhe";
+	//member methods(Functions)
+}
+public class ClassAndObjectExample {
+
+}

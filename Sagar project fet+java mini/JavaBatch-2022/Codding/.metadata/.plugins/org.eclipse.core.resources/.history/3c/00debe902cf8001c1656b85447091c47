@@ -1,0 +1,39 @@
+package Inheritance;
+class Employee
+{
+	int id;
+	String name;
+	float sal;
+	
+	public Employee(int id, String name) {
+		super();//Call parent class const
+		this.id = id;
+		this.name = name;
+	}
+	void show()
+	{
+		System.out.println(id+"\t"+name+"\t"+sal);
+	}
+	
+}
+class PartTimeEmp
+{
+	int fsal,enhrs,hrs_sal;//Instance
+	PartTimeEmp(int id,String name,int fsal,int enhrs,int hrs_sal)
+	{
+		
+	}
+	
+}
+public class InheritanceExample1 {
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+
+
+
+
+

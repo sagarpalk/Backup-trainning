@@ -1,0 +1,21 @@
+class Student
+{
+	//Instance variables
+	int id;
+	String name;
+	float percentage;
+	
+	Student()
+	{
+		
+	}
+	
+	
+}
+public class ConstructorExample
+{
+	public static void main(String[] args) {
+		
+	}
+
+}

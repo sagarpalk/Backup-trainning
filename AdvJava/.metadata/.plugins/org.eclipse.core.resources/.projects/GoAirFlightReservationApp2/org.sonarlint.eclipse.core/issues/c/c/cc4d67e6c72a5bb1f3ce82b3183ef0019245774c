@@ -1,0 +1,26 @@
+
+
+java:S1989*"PHandle the following exception that could be thrown by "getWriter": IOException.(ÏÚ‚´HümRMINORZVULNERABILITY
+
+java:S19897"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ÜáŠ×ûÿÿÿÿH‚nRMINORZVULNERABILITY
+b
+java:S1481?"/Remove this unused "flightDate" local variable.(ØÞû‹8á±–‰¤0H´oRMINORZ
+CODE_SMELL
+]
+java:S1874>",Remove this use of "Time"; it is deprecated.(…ÈÂ±úÿÿÿÿHƒnRMINORZ
+CODE_SMELL
+ˆ
+java:S19899"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ëñ¡‘H€nRMINORZVULNERABILITY
+
+java:S19898"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ãõíÔþÿÿÿÿHÿmRMINORZVULNERABILITY
+ˆ
+java:S19896"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(œ©¥ HnRMINORZVULNERABILITY
+q
+java:S1854?">Remove this useless assignment to local variable "flightDate".(ØÞû‹8á±–‰¤0H³oRMAJORZ
+CODE_SMELL
+k
+java:S11611":Add the "@Override" annotation above this method signature(þ³‚”ûÿÿÿÿHýmRMAJORZ
+CODE_SMELL
+f
+java:S1161'":Add the "@Override" annotation above this method signature(÷¤‹úHúmRMAJORZ
+CODE_SMELL

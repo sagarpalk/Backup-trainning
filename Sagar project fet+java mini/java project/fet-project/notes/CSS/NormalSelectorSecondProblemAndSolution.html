@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Won’t able to apply different formatting for same tag from HTML
+            ---Solution-Class selector  */
+            /* Problem first declaration get overriden by second */
+            /* h3{
+                color: black;
+                background-color: pink;
+            }
+            h3{
+                color: black;
+                background-color: gold;
+            } */
+            /* Solution-Class selector  */
+            h3.second{
+                color: black;
+                background-color: pink;
+            }
+            h3.first{
+                color: black;
+                background-color: gold;
+            } 
+
+    </style>
+</head>
+<body>
+    <h3 class="first">Cybage Software Pvt. Ltd.</h3>
+    <h3 class="second">Address: Cybage Towers, Survey No. 13A/ 1,2,3/1, Cybage Tower Rd, Adarsh Nagar, Wadgaon Sheri, Pune, Maharashtra 411014</h3>
+</body>
+</html>

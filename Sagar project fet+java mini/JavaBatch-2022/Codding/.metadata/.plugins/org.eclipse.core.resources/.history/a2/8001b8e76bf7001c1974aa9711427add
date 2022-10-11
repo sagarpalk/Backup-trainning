@@ -1,0 +1,32 @@
+class Student
+{
+	//Instance variables
+	int id;
+	String name;
+	float percentage;
+	
+	Student()
+	{
+		System.out.println("Default constructor!!!");
+	}
+	Student(int i,String n,float p)//Local variable
+	{
+		System.out.println("Parameterized constructor!!!");
+		id=i;
+		name=n;
+		percentage=p;
+	}
+	
+}
+public class ConstructorExample
+{
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+
+
+
+

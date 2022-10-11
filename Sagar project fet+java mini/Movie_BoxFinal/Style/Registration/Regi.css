@@ -1,0 +1,26 @@
+.formContainer{
+    padding: 50px 50px;
+    margin-top: 10vh;
+    box-shadow: 10px 10px 20px 5px black;
+    color: black;
+}
+body{
+    background-color: blueviolet;  
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+  .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+.changeBorder{
+    border-color: green;
+    box-shadow: 5px 5px 5px green;
+}
+.errorInputText{
+    border-color: red;
+    box-shadow: 5px 5px 5px red;
+}
+.hidden{
+    visibility: hidden;
+}

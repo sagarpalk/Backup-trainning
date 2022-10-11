@@ -1,0 +1,236 @@
+function __sfLog(s) {
+  if (document.cookie.indexOf("__SF__sflog") < 0) {
+    return;
+  }
+  var fullS = "ajax - " + s;
+  console.log(fullS);
+}
+
+function __sf__redirect(e, dest) {
+  // use jquery
+  try {
+    $(e).unbind("beforeunload");
+  } catch (err) {}
+  if (typeof e.removeAllEventListeners !== "undefined") {
+    e.removeAllEventListeners("beforeunload");
+  }
+  e.onbeforeunload = null;
+  e.location.href = dest;
+  e.__in_sf_redirect = true;
+}
+
+function __sf__handleResponse(getResponseHeader, url) {
+  const sfAction = getResponseHeader("X-SF-Block");
+
+  if (typeof sfAction !== "string" || !sfAction.length) {
+    return false;
+  }
+
+  try {
+    if (typeof window.top.document.body.onbeforeunload !== "undefined") {
+      window.top.document.body.onbeforeunload = null;
+    }
+  } catch (err) {
+    window.document.body.onbeforeunload = null;
+  }
+
+  if (sfAction === "redirect-to-service") {
+    __sf__redirect(
+      window.top,
+      "/__sf_redirect/" +
+        "?" +
+        "url=" +
+        "https://login.microsoftonline.com"
+    );
+    return true;
+  }
+
+  if (sfAction === "client-certificate-request") {
+    var ccc = getResponseHeader("X-SF-CCC");
+    if (typeof __SF__getCertificate === typeof Function && ccc) {
+      __SF__getCertificate(function () {
+        if (typeof __SF__clientCertificateCallback === typeof Function) {
+          __SF__clientCertificateCallback();
+        } else {
+          window.top.location.reload();
+        }
+      }, ccc);
+    } else {
+      window.top.location.reload();
+    }
+
+    return true;
+  }
+
+  const locationMatch = url.match(/^(https?\:\/\/[^\/?#]+)/i);
+  const requestLocation = (locationMatch && locationMatch[1]) || "";
+
+  if (
+    sfAction === "action-verification" ||
+    sfAction === "account-verification"
+  ) {
+    try {
+      var isIframeVerification = false;
+      if (isIframeVerification) {
+        show_verifcation_iframe(sfAction, requestLocation);
+        return true;
+      }
+    } catch (err) {}
+  }
+
+  // not client certificate type
+  try {
+    __sf__redirect(
+      window.top,
+      requestLocation +
+        "/__sf_block/" +
+        sfAction +
+        "?" +
+        "url=" +
+        window.top.location.href
+    );
+  } catch (err) {
+    __sf__redirect(window, requestLocation + "/__sf_block/" + sfAction);
+  }
+
+  return true;
+}
+
+function __sf__trackXhr(e) {
+  if (e.__sf__callback) return false;
+  if (e.readyState != 4) {
+    setTimeout(function () {
+      if (__sf__trackXhr != null) {
+        __sf__trackXhr(e);
+      }
+    }, 100);
+    return false;
+  }
+  return __sf__handleResponse(function (headerName) {
+    return e
+      .getAllResponseHeaders()
+      .indexOf(headerName.toLowerCase()) >= 0
+      ? e.getResponseHeader(headerName)
+      : null;
+  }, e.responseURL);
+}
+
+let __sf__xhrHooked = false;
+function __sf__installAjaxHook() {
+  if (__sf__xhrHooked) return;
+
+  const __sf__xhrSend = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.send = function () {
+    __sf__xhrSend.apply(this, arguments);
+    if (__sf__trackXhr != null && __sf__trackXhr(this)) return;
+    this.__sf__onreadystatechange = this.onreadystatechange;
+    this.onreadystatechange = function () {
+      const xhrObj = this;
+      if (this.readyState == 4) {
+        this.__sf__callback = true;
+        if (
+          __sf__handleResponse != null &&
+          __sf__handleResponse(function (headerName) {
+            return xhrObj
+              .getAllResponseHeaders()
+              .indexOf(headerName.toLowerCase()) >= 0
+              ? xhrObj.getResponseHeader(headerName)
+              : null;
+          }, this.responseURL)
+        )
+          return;
+      }
+      this.__sf__onreadystatechange &&
+        this.__sf__onreadystatechange.apply(this, arguments);
+      // In some cases (e.g. chrome IOS), there is a re-use of the XmlHttpRequest. Therefore, cleanup is required in order to prevent an infinite loop.
+      if (this.readyState == 4) {
+        this.onreadystatechange = this.__sf__onreadystatechange;
+      }
+    };
+  };
+  // register to event from iframe
+  var eventMethod = window.addEventListener
+    ? "addEventListener"
+    : "attachEvent";
+  var eventer = window[eventMethod];
+  var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+  // Listen to message from child window
+  eventer(
+    messageEvent,
+    function (e) {
+      var key = e.message ? "message" : "data";
+      var data = e[key];
+      if (data === "VerifyDone") {
+        __sfLog("Before calling sf_iframe_verification_success");
+        sf_iframe_verification_success();
+      }
+    },
+    false
+  );
+
+  __sf__xhrHooked = true;
+}
+
+let __sf__fetchHooked = false;
+function __sf__installFetchHook() {
+
+  try {
+    if (__sf__fetchHooked) return;
+    const __sf__fetch = fetch;
+
+    fetch = function fetch() {
+      return __sf__fetch.apply(null, arguments).then(function (response) {
+        if (
+          !__sf__handleResponse(function (headerName) {
+            return response.headers.get(headerName);
+          }, response.url)
+        ) {
+          return response;
+        }
+      });
+    };
+
+    __sf__fetchHooked = true;
+  } catch (e) {
+    console.log("Skyfence fetch hook failed to apply: " + e.message);
+  }
+}
+function show_verifcation_iframe(sfAction, requestLocation) {
+  __sfLog("show_verifcation_iframe called");
+  var verifyDiv = window.top.document.createElement("div");
+  window.top.document.body.appendChild(verifyDiv);
+  verifyDiv.id = "sf_verifyDiv";
+  verifyDiv.style.height = "100%";
+  verifyDiv.style.width = "100%";
+  verifyDiv.style.position = "fixed";
+  verifyDiv.style.background = "white";
+  verifyDiv.style.overflow = "hidden";
+  verifyDiv.style.top = 0;
+  verifyDiv.style.zIndex = 999;
+  var f = window.top.document.createElement("iframe");
+  f.setAttribute("scrolling", "no");
+  f.setAttribute("border", "0");
+  f.id = "sf_verifyFrame";
+  f.src = requestLocation + "/__sf_block/" + sfAction;
+  f.style.height = "100%";
+  f.style.width = "100%";
+  verifyDiv.appendChild(f);
+  ;
+}
+
+function sf_iframe_verification_success() {
+  __sfLog("in sf_iframe_verification_success");
+  v = window.document.getElementById("sf_verifyDiv");
+  if (typeof v !== "undefined") {
+    v.style.visibility = "hidden";
+  } else {
+    __sfLog("No verify div");
+  }
+  ;
+}
+
+/** @version 07.04.21 **/
+
+__sf__installAjaxHook();
+__sf__installFetchHook();

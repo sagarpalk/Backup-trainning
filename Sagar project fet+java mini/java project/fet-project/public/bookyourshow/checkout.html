@@ -1,0 +1,78 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Sen:wght@400;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="script_home.js"></script>
+    <link rel="stylesheet" href="./style_home.css">
+    <title>Bookyourshow</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="index.html"><h1 class="logo">Bookyourshow</h1></a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><input type="search" class="search" name="search" placeholder="   Search any movie you want to book ...."><a href="#"><i class="search-icon fas fa-search"></i></a></li>
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item"><a style="text-decoration: none;" href="bookyourshow/all_movies.html">Movies</a></li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">
+                    <span>Hi,</span>
+                    <span id="result"> </span>
+                    <span class="profile-text"><a style="text-decoration: none;" href="./login.html">Login</a></span>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div align="center">
+        <fieldset style="margin-top: 200px;" class="main">
+        <h2 class="elem"><p>Movie name - <span id="movie"></span></p></h2>
+        <h3 class="elem"><p>Seat number is : <span id="seat"></span> </p></h3>
+        <button class="elem1" style="background-color: greenyellow; border-radius: 20px;height: 40px;width: 100px;text-decoration: solid;">PAY NOW</button>
+        <button class="elem1" style="background-color: gold; border-radius: 20px;height: 40px;width: 100px;text-decoration: solid;">DOWNLOAD</button>
+        </fieldset>
+    </div>
+    <script>
+        document.getElementById("movie").innerHTML=localStorage.getItem("textvalue");
+        document.getElementById('seat').innerHTML=localStorage.getItem("selectedSeats");
+    </script>
+    <style>
+     .main{
+         font-family: 'Courier New', Courier, monospace;
+         background-color: aquamarine;
+     margin-left: 450px;
+     margin-right: 450px;
+     }
+     .elem{
+         margin-top: 30px;
+     }
+     .elem1{
+         margin-top: 30px;
+         margin-right: 30px;
+         margin-bottom: 15px;
+         font-weight: bold;
+
+     }
+     .elem1:hover{
+         transform: scale(1.1);
+     }
+    </style>
+    </body>
+    </html>

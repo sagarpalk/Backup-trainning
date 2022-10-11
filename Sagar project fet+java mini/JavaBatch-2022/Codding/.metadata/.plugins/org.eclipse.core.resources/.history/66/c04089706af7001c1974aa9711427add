@@ -1,0 +1,14 @@
+class Student
+{
+	int id;
+	String name;
+	float percentage=6.7;
+	
+}
+public class ConstructorExample
+{
+	public static void main(String[] args) {
+		
+	}
+
+}

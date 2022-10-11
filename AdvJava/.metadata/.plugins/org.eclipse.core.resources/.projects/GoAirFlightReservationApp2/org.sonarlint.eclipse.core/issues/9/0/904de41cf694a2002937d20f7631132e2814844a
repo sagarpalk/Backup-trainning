@@ -1,0 +1,32 @@
+
+“
+java:S1989L"_Handle the following exceptions that could be thrown by "doGet": ServletException, IOException.(®Ó‘ûÿÿÿÿÿHÀwRMINORZVULNERABILITY
+d	java:S106<"9Replace this use of System.out or System.err by a logger.(›âÎðH¹wRMAJORZ
+CODE_SMELL
+f
+java:S1161)":Add the "@Override" annotation above this method signature(÷¤‹úH°wRMAJORZ
+CODE_SMELL
+•
+java:S1989:"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ÜÕˆêøÿÿÿÿHÁwRMINORZVULNERABILITY
+k
+java:S1161J":Add the "@Override" annotation above this method signature(þ³‚”ûÿÿÿÿH·wRMAJORZ
+CODE_SMELL
+i	java:S1068"9Replace this use of System.out or System.err by a logger.(ûû©ÒþÿÿÿÿH´wRMAJORZ
+CODE_SMELL
+d	java:S106-"9Replace this use of System.out or System.err by a logger.(Ú¬§®HµwRMAJORZ
+CODE_SMELL
+^
+java:S1128"2Remove this unused import 'com.cybage.model.User'.(šóÊÖH²wRMINORZ
+CODE_SMELL
+g
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ôH¾wRMINORZ
+CODE_SMELL
+•
+java:S1989>"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ÜÕˆêøÿÿÿÿH¶wRMINORZVULNERABILITY
+‚
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÙéšäûÿÿÿÿHºwRMAJORZBUG
+n	java:S125"<This block of commented-out lines of code should be removed.(£Îñ8‰À ˜¤0HÊwRMAJORZ
+CODE_SMELL
+j
+java:S1128"7Remove this unused import 'com.cybage.dao.UserDaoImpl'.(´ìèÖ8‰À ˜¤0HËwRMINORZ
+CODE_SMELL

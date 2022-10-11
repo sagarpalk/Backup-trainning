@@ -1,0 +1,20 @@
+class MyThread2 extends Thread
+{
+	public void run()
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i*5+"\t"+Thread.currentThread().getName());
+			try
+			{
+				Thread.sleep(3000);//Non Runnable
+			}
+			catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+public class ThreadCreationSecondWay {
+
+}

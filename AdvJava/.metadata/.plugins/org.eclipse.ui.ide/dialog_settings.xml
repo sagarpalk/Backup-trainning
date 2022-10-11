@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\Java\ProductManagement"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="E:\AdvJava\FlightTicketReservation"/>
+			<item value="C:\Users\sagarpalk\Desktop\askshay\ProductManagmentSystem1"/>
+			<item value="C:\Users\sagarpalk\Desktop\ash\AirlineReservationSystem"/>
+			<item value="C:\Users\sagarpalk\Desktop\pankaj\FoodV1"/>
+			<item value="E:\AdvJava\ServletExamples"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

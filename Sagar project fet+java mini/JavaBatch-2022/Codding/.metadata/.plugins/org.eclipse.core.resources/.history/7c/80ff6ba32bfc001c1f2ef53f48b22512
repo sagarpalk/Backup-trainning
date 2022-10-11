@@ -1,0 +1,18 @@
+class Account
+{
+	int act_bal;
+	
+	Account(int act_bal)
+	{
+		this.act_bal=act_bal;
+	}
+	synchronized public void deposit(int dbal)
+	{
+		System.out.println("Going To Deposit!!!!");
+		act_bal=act_bal+dbal;
+		System.out.println("Deposit Complete Balance:"+act_bal);
+	}
+}
+public class ThreadCommunication {
+
+}

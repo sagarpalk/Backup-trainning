@@ -1,0 +1,17 @@
+package FunctionalInterface1;
+interface Shape
+{
+	void area();	
+}
+class Circle implements Shape
+{
+	
+}
+
+public class FunctionalInterfaceExample
+{
+	public static void main(String[] args) {
+		
+	}
+
+}

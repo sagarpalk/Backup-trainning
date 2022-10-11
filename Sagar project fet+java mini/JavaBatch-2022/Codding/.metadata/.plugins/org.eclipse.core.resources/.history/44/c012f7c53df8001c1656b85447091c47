@@ -1,0 +1,19 @@
+package Abstraction;
+
+interface Game
+{
+	//public abstract 
+	void start();
+	void stop();
+	void run();
+	
+}
+
+
+public class InterfaceExample
+{
+	public static void main(String[] args) {
+		Game g=new Game();
+	}
+
+}

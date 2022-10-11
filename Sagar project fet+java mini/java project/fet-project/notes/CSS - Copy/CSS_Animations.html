@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes first_div
+        {
+            from{background-color:Green;}
+            to{background-color: gold;}
+        }
+        /* @keyframes first_div 
+        {
+            0%{background-color: red;}
+            25%{background-color: green;}
+            50%{background-color: blue;}
+            100%{background-color: yellow;}
+            
+        }
+        div
+        {
+            width: 300px;
+            height: 300px;
+            border: solid 2px gold;
+            background-color: red;
+            animation-name: first_div;
+            animation-duration: 7s;
+            animation-delay: 4s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+        }*/
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            font-weight: bold;
+            position: relative;
+            animation: second_frame 5s infinite;
+            } 
+        #d1{animation-timing-function: linear;}
+        #d2{animation-timing-function: ease;}
+        #d3{animation-timing-function: ease-in;}
+        #d4{animation-timing-function: ease-out;}
+        #d5{animation-timing-function: ease-in-out;}
+
+        @keyframes second_frame {
+            from{left: 0px;}
+            to{left: 300px;}
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div>
+
+    </div> -->
+    <div id="d1">
+        linear
+    </div>
+    <div id="d2">
+        ease
+    </div>
+    <div id="d3">
+        ease-in
+    </div>
+    <div id="d4">
+        ease-out
+    </div>
+    <div id="d5">
+        ease-in-out
+    </div>
+</body>
+</html>

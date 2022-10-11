@@ -1,0 +1,30 @@
+package Inheritance;
+class A
+{
+	A()
+	{
+		System.out.println("A");
+	}
+}
+class B extends A
+{
+	B()
+	{
+		super();//Added Implicitly by Compiler during compilation
+		System.out.println("B");
+	}
+}
+public class Demo {
+	public static void main(String[] args) {
+		B b1=new B();
+	}
+}
+
+
+
+
+
+
+
+
+

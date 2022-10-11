@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Won’t able to apply same formatting  for different tags from HTML.
+	        --Solution-Group selector
+        */
+        /*
+         leads to Code duplication
+        */
+        /*
+         h2{
+            color: orange;
+            background-color: black;
+        }
+        h5{
+            color: orange;
+            background-color: black;
+        } */
+        /* Solution-Group Selector */
+        h2,h5{
+            color: orange;
+            background-color: black;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Cybage</h2>
+    <h5>Welcome to Web Application Development</h5>
+</body>
+</html>

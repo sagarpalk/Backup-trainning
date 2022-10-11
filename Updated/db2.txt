@@ -1,0 +1,113 @@
+mysql> drop database rflight;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> create database rflight;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show tables;
+ERROR 1046 (3D000): No database selected
+mysql> use rflight;
+Database changed
+mysql> show tables;
+Empty set (0.01 s
+
+==========================Booking==================================================
+drop table if exists bookings
+create table bookings (booking_id integer not null auto_increment, booking_date varchar(255), numberof_seats integer not null, total_amount double precision not null, cust_id integer, flight_id integer, primary key (booking_id)) engine=Inno
+
+
+ desc bookings;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| booking_id     | int(11)      | NO   | PRI | NULL    | auto_increment |
+| booking_date   | varchar(255) | YES  |     | NULL    |                |
+| numberof_seats | int(11)      | NO   |     | NULL    |                |
+| total_amount   | double       | NO   |     | NULL    |                |
+| flight_id      | int(11)      | YES  | MUL | NULL    |                |
+| passenger_id   | int(11)      | YES  | MUL | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+insert into bookings values(default,'02-09-2022',10,2032.9,1,2);
+
+
+
+==============================Complaint================================
+ drop table if exists complaint
+ create table complaint (complaint_id integer not null auto_increment, complaint_type varchar(255), description varchar(255), passenger_id integer, primary key (complaint_id)) engine=InnoDB
+
+
+
+==================================flights===========================
+drop table if exists flights
+create table flights (flight_id integer not null auto_increment, destination varchar(255), flight_date varchar(255), flight_name varchar(255), flight_no integer not null, flight_source varchar(255), flight_type varchar(255), flightduration integer not null, flightprice double precision not null, flightshift varchar(255), totalseats integer not null, primary key (flight_id)) engine=InnoDB
+ 
+mysql> insert into flights values(default,'Pune','09-08-2022','Airline','Delhi','Business',3,4000,'Morning',100);
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> ;
+
+ insert into flights values(default,'Mumbai','02-09-2022','Airline',232,'Delhi','Economy',3,4000,'Morning',100);
+Query OK, 1 row affected (0.01 sec)
+
+
+ select * from flights;
++-----------+-------------+-------------+-------------+-----------+---------------+-------------+----------------+-------------+-------------+------------+
+| flight_id | destination | flight_date | flight_name | flight_no | flight_source | flight_type | flightduration | flightprice | flightshift | totalseats |
++-----------+-------------+-------------+-------------+-----------+---------------+-------------+----------------+-------------+-------------+------------+
+|         1 | Pune        | 02-09-2022  | Airline     |     23332 | Delhi         | Business    |              3 |        4000 | Morning     |        100 |
+|         2 | Mumbai      | 02-09-2022  | Airline     |       232 | Delhi         | Economy     |              3 |        4000 | Morning     |        100 |
++-----------+-------------+-------------+-------------+-----------+---------------+-------------+----------------+-------------+-------------+------------+
+2 rows in set (0.00 sec)
+
+
+
+=====================================offers===============================
+
+ drop table if exists offers
+ create table offers (offer_id integer not null auto_increment, offer_name varchar(255), offer_rate integer not null, flight_id integer, primary key (offer_id)) engine=InnoDB
+
+
+====================================Passenger===============================
+drop table if exists passenger
+create table passenger (passenger_id integer not null auto_increment, age integer not null, contact_n integer not null, gender varchar(255), user_email varchar(255), user_name varchar(255), primary key (passenger_id)) engine=InnoDB
+ 
+mysql> insert into passenger values(default,23,98748776,'male','sam@gmail.com','sam');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into passenger values(default,23,987468776,'female','raji@gmail.com','raji');
+Query OK, 1 row affected (0.01 sec)
+
+select * from passenger;
++--------------+-----+------------------+------------+----------------+--------+----------+-----------+
+| passenger_id | age | confirm_password | contact_no | email          | gender | password | user_name |
++--------------+-----+------------------+------------+----------------+--------+----------+-----------+
+|            1 |  23 | 123              |    9468776 | raji@gmail.com | male   | 123      | raji      |
+|            2 |  25 | 133              |      98776 | sam@gmail.com  | male   | 133      | sam       |
++--------------+-----+------------------+------------+----------------+--------+----------+-----------+
+2 rows in set (0.00 sec)
+
+
+
+====================================reports===================================
+
+ drop table if exists reports
+create table reports (report_id integer not null auto_increment, booking_id integer, cust_id integer, flight_id integer, primary key (report_id)) engine=InnoDB
+
+ drop table if exists tickets
+create table tickets (ticket_id integer not null auto_increment, ticket_date varchar(255), booking_id integer, primary key (ticket_id)) engine=InnoDB
+
+Hibernate: drop table if exists user
+create table user (user_id integer not null auto_increment, password varchar(255), role varchar(255), user_email varchar(255), user_name varchar(255), primary key (user_id)) engine=InnoDB
+Hibernate: alter table bookings add constraint FKgjiotlojgicfryn9gosngevkq foreign key (cust_id) references passenger (passenger_id)
+Hibernate: alter table bookings add constraint FKidcytqkgq0ve4x1elcnbmdy8a foreign key (flight_id) references flights (flight_id)
+Hibernate: alter table complaint add constraint FK5b0h2j6ivhjs4hiragq67xgjw foreign key (passenger_id) references passenger (passenger_id)
+Hibernate: alter table offers add constraint FK567rmu4knb09fyo87b0w11spo foreign key (flight_id) references flights (flight_id)
+Hibernate: alter table reports add constraint FK423qtj995s4jhe7db7dc8g5bw foreign key (booking_id) references bookings (booking_id)
+Hibernate: alter table reports add constraint FKbn6pnxltd3hfhnyp1e1g5bfbg foreign key (cust_id) references passenger (passenger_id)
+Hibernate: alter table reports add constraint FKsakq6v9lh6p1c7e2d8uw5ko8n foreign key (flight_id) references flights (flight_id)
+Hibernate: alter table tickets add constraint FKefja4avuu7g29t78mxifrsynb foreign key (booking_id) references bookings (booking_id)
+[2m2022-08-24 19:15:25.216[0;39m [32m INFO[0;39m [35m3768[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+
+

@@ -1,0 +1,77 @@
+
+i	java:S106G"9Replace this use of System.out or System.err by a logger.(¬¬§„úÿÿÿÿHÆxRMAJORZ
+CODE_SMELL
+i	java:S106Q"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿHÇxRMAJORZ
+CODE_SMELL
+m
+java:S1117S"ARename "flightService" which hides the field declared at line 27.(Ö›¨ÕHÈxRMAJORZ
+CODE_SMELL
+d	java:S106I"9Replace this use of System.out or System.err by a logger.(ŸïóîHÉxRMAJORZ
+CODE_SMELL
+ˆ
+java:S1989A"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(œ©¥ HÊxRMINORZVULNERABILITY
+d
+java:S1481V"3Remove this unused "bookingService" local variable.(Çó…ÀÿÿÿÿÿHËxRMINORZ
+CODE_SMELL
+|	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨€ÚÉHÍxRMINORZ
+CODE_SMELL
+	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ˜ÕÚşÿÿÿÿHÎxRMINORZ
+CODE_SMELL
+•
+java:S19897"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ÜÕˆêøÿÿÿÿHÏxRMINORZVULNERABILITY
+g	java:S125"<This block of commented-out lines of code should be removed.(™ ·¬HĞxRMAJORZ
+CODE_SMELL
+i	java:S106K"9Replace this use of System.out or System.err by a logger.(îîÂÓùÿÿÿÿHÑxRMAJORZ
+CODE_SMELL
+	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆšÁöøÿÿÿÿHÒxRMINORZ
+CODE_SMELL
+}
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÙÏû¨HÓxRMAJORZBUG
+d	java:S1065"9Replace this use of System.out or System.err by a logger.(—ò¥äHÔxRMAJORZ
+CODE_SMELL
+i	java:S1064"9Replace this use of System.out or System.err by a logger.(êêÎ¹üÿÿÿÿHÕxRMAJORZ
+CODE_SMELL
+s
+java:S1854V"BRemove this useless assignment to local variable "bookingService".(Çó…ÀÿÿÿÿÿHÖxRMAJORZ
+CODE_SMELL
+k
+java:S1854T":Remove this useless assignment to local variable "flight".(äî‰áúÿÿÿÿH×xRMAJORZ
+CODE_SMELL
+\
+java:S1481T"+Remove this unused "flight" local variable.(äî‰áúÿÿÿÿHØxRMINORZ
+CODE_SMELL
+c	java:S106L"9Replace this use of System.out or System.err by a logger.(¸†ªdHÚxRMAJORZ
+CODE_SMELL
+‡
+java:S1989W"SHandle the following exception that could be thrown by "sendRedirect": IOException.(øóŠœøÿÿÿÿHÛxRMINORZVULNERABILITY
+k
+java:S1161>":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿHÜxRMAJORZ
+CODE_SMELL
+c	java:S106/"9Replace this use of System.out or System.err by a logger.(ÀÕÉ]HŞxRMAJORZ
+CODE_SMELL
+i	java:S106H"9Replace this use of System.out or System.err by a logger.(Ò˜Ğ×şÿÿÿÿHßxRMAJORZ
+CODE_SMELL
+ˆ
+java:S1989E"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(È’¢ºHàxRMINORZVULNERABILITY
+d	java:S106,"9Replace this use of System.out or System.err by a logger.(¹¨«ÛHáxRMAJORZ
+CODE_SMELL
+f
+java:S1161)":Add the "@Override" annotation above this method signature(÷¤‹úHâxRMAJORZ
+CODE_SMELL
+
+java:S1989+"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ÆšÁöøÿÿÿÿHäxRMINORZVULNERABILITY
+i	java:S106-"9Replace this use of System.out or System.err by a logger.(í‘«áıÿÿÿÿHåxRMAJORZ
+CODE_SMELL
+d	java:S1060"9Replace this use of System.out or System.err by a logger.(í§íÕHæxRMAJORZ
+CODE_SMELL
+d	java:S106U"9Replace this use of System.out or System.err by a logger.(ÕÁ·…HçxRMAJORZ
+CODE_SMELL
+d	java:S106N"9Replace this use of System.out or System.err by a logger.(—Ş“HèxRMAJORZ
+CODE_SMELL
+…
+java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").(¹—£HéxRMINORZ
+CODE_SMELL
+
+java:S1989F"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(İ€Ğ¿ûÿÿÿÿHëxRMINORZVULNERABILITY
+d	java:S106J"9Replace this use of System.out or System.err by a logger.(×ú÷ùHìxRMAJORZ
+CODE_SMELL

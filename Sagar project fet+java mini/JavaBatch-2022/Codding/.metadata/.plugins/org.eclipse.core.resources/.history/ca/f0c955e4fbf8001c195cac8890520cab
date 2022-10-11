@@ -1,0 +1,22 @@
+package FunctionalInterface1;
+
+import java.util.Scanner;
+
+interface Shape
+{
+	void area();
+}
+
+public class FunctionalInterfaceExample
+{
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+
+		Shape s=()->{
+			float ans=3.14f*5*5;
+			System.out.println("Area is:"+ans);
+			};
+			s.area();
+	}
+
+}

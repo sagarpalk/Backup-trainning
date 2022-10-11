@@ -1,0 +1,6 @@
+
+public class StaticVariableExample {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,17 @@
+package FunctionalInterface1;
+interface Shape
+{
+	void area();
+}
+
+public class FunctionalInterfaceExample
+{
+	public static void main(String[] args) {
+		Shape s=()->{
+			float ans=3.14f*5*5;
+			System.out.println("Area is:"+ans);
+			};
+			s.area();
+	}
+
+}

@@ -1,0 +1,25 @@
+package Abstraction;
+
+interface Game
+{
+	//public abstract 
+	void start();
+	void stop();
+	void run();
+	
+}
+class G1_Game implements Game
+{
+	void start()
+	{
+		System.out.println("G1_game started");
+	}
+}
+
+public class InterfaceExample
+{
+	public static void main(String[] args) {
+		Game g;
+	}
+
+}

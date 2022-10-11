@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringHelperTest" project="JUnitCourse" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.in28minutes.junit.helper.StringHelperTest" time="0.001">
+    <testcase name="test2TruncateAInFirst2Positions" classname="com.in28minutes.junit.helper.StringHelperTest" time="0.0"/>
+    <testcase name="testTruncateAInFirst2Positions" classname="com.in28minutes.junit.helper.StringHelperTest" time="0.0"/>
+  </testsuite>
+</testrun>

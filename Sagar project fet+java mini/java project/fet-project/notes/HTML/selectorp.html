@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>First Para</p>
+    <p>Second Para</p>
+    <p>Third Para</p>
+    <p>Fourth Para</p>
+    <script>
+        // var firstp=document.querySelector('p');
+        // console.log(firstp);
+        // firstp.style.color="Red";
+        var allp=document.querySelectorAll('p');
+        console.log(allp[2]);
+        for(var index=0;index<allp.length;index++){
+            allp[index].style.color="Red";
+        }
+    </script>
+</body>
+</html>

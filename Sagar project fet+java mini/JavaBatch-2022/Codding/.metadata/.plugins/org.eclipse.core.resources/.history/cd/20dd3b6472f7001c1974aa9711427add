@@ -1,0 +1,16 @@
+class Book
+{
+	//Instance variables
+	private String bookName,authorName;
+	private float price;
+	
+	
+}
+public class GetterSetterExample 
+{
+	public static void main(String[] args) {
+		Book b1=new Book();
+		b1.bookName="C Programming";
+	}
+
+}

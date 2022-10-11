@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function info()
+            {
+                var n=document.getElementById("name").value
+                console.log("Name:",n)
+                localStorage.setItem("un",n)
+              //  document.getElementById("div").innerHTML=localStorage.getItem("un")
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div"></div>
+        <form action="#">
+            Name <input type="text" name="name" id="name">
+            <input type="button" value="click" onclick="info()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Problem 1:--differrent element wanted apply same styling
+        solution :-Group selector 
+        Problem 2:-Same tags and wanted to apply different styling
+        solution :-Class selector
+        Problem 3:-Won’t able to create own selector name
+        Solution-ID selector
+        */
+        h1,div{
+        background-color: black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: gold;
+        }
+
+        .css_header
+        {
+            /* 
+            border-style: solid; 
+            border-width: 5px;
+            border-color: black;
+            */
+
+            border: dashed 8px gold;
+
+            color: crimson;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            height: 300px;
+            background-color: white;
+        }
+        #sonali
+        {
+            color: blue;
+        }
+        /* div{
+            background-color: black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: gold;
+        } */
+    </style>
+</head>
+<body>
+    <h4 id="sonali">Sonali Mindhe</h4>
+    <h1>Cybage Software Pvt Ltd</h1>
+    <div>
+        //www.cybage.com/contactus<br>
+        Cybage Software Pvt. Ltd. West Avenue, Kalyani Nagar, Pune, Maharashtra - 411006 (Development Center) MAP IT Pune Cybage Software Pvt. Ltd. (EON Kharadi SEZ unit) 7th Floor, Tower-B, EON
+    </div>
+    <h1 class="css_header">CSS</h1>
+    <div class="css_info" >
+        
+Won’t able to apply same formatting  for different tags from HTML.
+Solution-Group selector
+
+Won’t able to apply different formatting for same tag from HTML
+Solution-Class selector 
+
+Won’t able to create own selector name
+Solution-ID selector
+
+    </div>
+</body>
+</html>

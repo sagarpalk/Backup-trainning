@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            var userName = {
+            email: $("#email").val(),
+            password: $("#password").val(),
+            name : $("#name").val(),
+            mobile : $("#mobile").val()
+        }
+            $("button").click(function(){
+                $.ajax({
+                url:'http://localhost:3000/user',
+                method:'POST',
+                data : userName, 
+                success: (data)=>{
+                    console.log(data);
+
+                    // $.each(data,(x,v)=>{
+                    //     $('div').append("<br>").append(v.name);
+                    // })
+                    
+                },
+                error:()=>{alert("Some netwrok issue")},
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    
+        Email : <input type="text" name="email" value="" id="email">
+        <br>
+        Password : <input type="password" name="password" value="" id="password">
+        <br>
+        Name : <input type="text" name="name" value="" id="name">
+        <br>
+        Mobile : <input type="number" name="mobile" value="" id="mobile">
+        <br>
+        
+        <button id="btn2">Sign Up</button>
+
+        <div></div>
+       
+
+   
+</body>
+</html>

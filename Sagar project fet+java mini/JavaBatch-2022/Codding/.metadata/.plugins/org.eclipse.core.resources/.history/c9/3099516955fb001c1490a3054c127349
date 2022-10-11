@@ -1,0 +1,28 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class TryAndCatchExample
+{
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		try
+		{
+			System.out.println("Enter 2 no's:");
+			int arr[]=new int[3];//index--0,1,2
+			arr[0]=s.nextInt();
+			arr[1]=s.nextInt();
+			arr[3]=arr[0]/arr[1];//----Create object of ArithmeticException--throw
+			System.out.println("Division is :"+arr[3]);
+		}
+		catch (ArithmeticException e)
+		{
+			System.out.println(e);//toString()
+			System.out.println("Can't devide ob zero");
+		}
+		catch (InputMismatchException e) {
+			System.out.println(e);
+		}
+		System.out.println("Rest of the code.....");
+	}
+
+}

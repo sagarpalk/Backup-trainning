@@ -1,0 +1,39 @@
+package FunctionalInterface1;
+
+import java.util.Scanner;
+//Functional Interface holding single abstract method
+interface Shape
+{
+	void area();
+}
+
+interface Math
+{
+	float div(int a,int b);
+}
+public class FunctionalInterfaceExample
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+		Shape s=()->{
+			System.out.println("Enter value:");
+			float r=sc.nextFloat();
+			float ans=3.14f*r*r;
+			System.out.println("Area is:"+ans);
+			};
+			s.area();
+			
+		Math m=(int a,int b)->
+				{
+					return a/b;
+				};
+			
+			
+			
+			
+			
+			
+	}
+
+}

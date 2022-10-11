@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+D:\JavaBatch-2022\Codding\.metadata\.plugins\org.eclipse.jdt.core
+2489455727.index
+1940955397.index
+4044757637.index
+615231966.index

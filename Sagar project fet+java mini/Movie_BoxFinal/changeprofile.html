@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../Style/Registration/Regi.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="innerContainer d-flex justify-content-center">
+            <div class="formContainer">
+                <form action="" class="">
+                    <h1 class="text-center">Change password And Subscription</h1>
+                      <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label"> old Password</label>
+                          <input type="password" class="form-control" id="oldPassword">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">new Password</label>
+                            <input type="password" class="form-control" id="newpaswword">
+                          </div>
+                          <select class="form-select" id="subtype" aria-label="Default select example">
+                            <option selected>Subscription</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Prime">Prime</option>
+                          </select><br>
+                  </form>
+                  <div>
+                    <br>
+                  </div>
+                  <button class="btn form-control btn-success" onclick="changePasswordAndSubscription()">Update Details</button>
+                  <div class="mb-3 form-check">
+                    <hr>
+                
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="../Login/Login.html"><button class="btn form-control btn-dark gray">Sign-in</button></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <script src="../../Javascript/Profile/chageProfile.js"></script>
+  
+</body>
+</html>

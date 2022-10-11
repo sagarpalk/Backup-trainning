@@ -1,0 +1,24 @@
+class MyThread1 implements Runnable
+{
+	public void run()
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i*5);
+		}
+	}
+}
+public class ThreadCreationFirstWay 
+{
+	public static void main(String[] args) {
+		MyThread1 m1=new MyThread1();
+		MyThread1 m2=new MyThread1();
+		//convert our class object into Thread 
+		Thread t1=new Thread(m1);
+		Thread t2=new Thread(m2);
+		t1.start();
+		t2.start();
+		
+	}
+
+}

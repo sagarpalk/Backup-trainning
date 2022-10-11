@@ -1,0 +1,43 @@
+
+
+java:S1989("PHandle the following exception that could be thrown by "getWriter": IOException.(ÏÚ‚´H“xRMINORZVULNERABILITY
+g
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ôH”xRMINORZ
+CODE_SMELL
+m
+java:S2184:"CCast one of the operands of this subtraction operation to a "long".(¼„æ­üÿÿÿÿH–xRMINORZBUG
+a
+java:S1481;"0Remove this unused "flight_time" local variable.(ƒ˜ÕÚşÿÿÿÿH—xRMINORZ
+CODE_SMELL
+
+java:S19897"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(µò¶£şÿÿÿÿH™xRMINORZVULNERABILITY
+a
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•HšxRMINORZ
+CODE_SMELL
+ˆ
+java:S19895"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(œ©¥ HœxRMINORZVULNERABILITY
+]
+java:S18749",Remove this use of "Time"; it is deprecated.(…ÈÂ±úÿÿÿÿHxRMINORZ
+CODE_SMELL
+f
+java:S1161&":Add the "@Override" annotation above this method signature(÷¤‹úHxRMAJORZ
+CODE_SMELL
+k
+java:S1161/":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿH xRMAJORZ
+CODE_SMELL
+
+java:S19896"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ÜáŠ×ûÿÿÿÿH¢xRMINORZVULNERABILITY
+c
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛH£xRMINORZ
+CODE_SMELL
+p
+java:S1854;"?Remove this useless assignment to local variable "flight_time".(ƒ˜ÕÚşÿÿÿÿH¥xRMAJORZ
+CODE_SMELL
+|	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ŞéŸH¦xRMINORZ
+CODE_SMELL
+	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ˜ÕÚşÿÿÿÿH§xRMINORZ
+CODE_SMELL
+
+java:S19898"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(â–½ùÿÿÿÿH¨xRMINORZVULNERABILITY
+c	java:S106?"9Replace this use of System.out or System.err by a logger.(ÀÕÉ]H©xRMAJORZ
+CODE_SMELL

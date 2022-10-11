@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up2</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+          
+            $("button").click(function(){
+                $.post("http://localhost:3000/user", {
+                    email: $("#email").val(),
+                    password: $("#password").val(),
+                    name : $("#name").val(),
+                    mobile : $("#mobile").val()
+                },
+                function(data, status){
+                    alert("Data : "+data+ " \nStatus "+status);
+                    //  window.location.href = "signin.html"
+                });
+                // window.location.href = "signin.html"
+            });
+        });
+    </script>
+</head>
+<body>
+    
+        Email : <input type="text" name="email" value="" id="email">
+        <br>
+        Password : <input type="password" name="password" value="" id="password">
+        <br>
+        Name : <input type="text" name="name" value="" id="name">
+        <br>
+        Mobile : <input type="number" name="mobile" value="" id="mobile">
+        <br>
+        
+        <button id="btn2">Sign Up</button>
+
+        <a href="signin.html">Go to Login</a>
+       
+
+   
+</body>
+</html>

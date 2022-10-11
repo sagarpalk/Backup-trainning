@@ -1,0 +1,20 @@
+package Inheritance;
+class Employee
+{
+	int id;
+	String name;
+	float sal;
+	
+	public Employee(int id, String name) {
+		super();//Call parent class const
+		this.id = id;
+		this.name = name;
+	}
+	
+	
+}
+public class InheritanceExample1 {
+	public static void main(String[] args) {
+		
+	}
+}

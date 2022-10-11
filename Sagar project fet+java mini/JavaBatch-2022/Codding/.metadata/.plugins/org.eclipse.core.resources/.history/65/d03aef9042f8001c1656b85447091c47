@@ -1,0 +1,28 @@
+class Stud extends Object
+{
+	int id;
+	String name;
+	
+	public Stud(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	//Method of Object class--overriding
+	public String toString() {
+		return id+"\t"+name;
+	}
+	
+}
+public class ArrayOfObject
+{
+	public static void main(String[] args) {
+		Stud s=new Stud(1, "Anagha");
+		System.out.println(s);//s.o.p(s.toString())
+	}
+
+}
+
+
+

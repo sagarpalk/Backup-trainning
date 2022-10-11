@@ -1,0 +1,32 @@
+class UserValidation
+{
+	public static void validate(String n,int age)
+	{
+		if(age==18 && n.equalsIgnoreCase("Indian"))
+		{
+			System.out.println("Welcome");
+		}
+		else
+		{
+			//Generate Exception Explicitly 
+			ArithmeticException e=new  ArithmeticException();
+			throw e;
+			
+		}
+	}
+}
+public class ThrowAndThrowsExample
+{
+	public static void main(String[] args) {
+		UserValidation.validate("ABCD", 18);
+	}
+
+}
+
+
+
+
+
+
+
+

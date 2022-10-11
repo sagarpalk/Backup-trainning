@@ -1,0 +1,23 @@
+class Demo
+{
+	Demo()
+	{
+		System.out.println("Constructor");
+	}
+	static
+	{
+		System.out.println("Static Block");
+	}
+}
+public class StaticBlock {
+	
+	
+	StaticBlock()
+	{
+		System.out.println("Constructor");
+	}
+	static
+	{
+		System.out.println("Static Block");
+	}
+}

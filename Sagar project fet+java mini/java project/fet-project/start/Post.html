@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script >
+    $(document).ready(function () {
+      $("button").click(function () {
+        $.post("http://localhost:3000/emp",
+        {
+            
+          username:$("#one").val(),
+            //name:"sdds",
+             password:$("#two").val()
+            //password:"qewwew"
+          }
+        ,
+          
+          function (data, status) {
+            alert("Data: " + data + "\nStatus: " + status);
+          });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+    
+    <form id="form_id" method="post" name="myform">
+
+    <label>User Name :</label>
+    <input type="text" name="username" id="one"/>
+
+    <label>Password :</label>
+    <input type="password" name="password" id="two"/>
+<!-- 
+    <input type="button" value="Login" id="submit" onclick="validate()"/> -->
+    <button id="button" onclick="validate()">Submit</button>
+    </form>
+    <span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoMoviePlay</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("button").click(function(){
+                
+                $.ajax({
+                url:'http://localhost:3000/movies',
+                method:'GET',
+                success: (data)=>{
+                    console.log(data);
+
+                    $.each(data,(x,v)=>{                      
+                            $("#img1").attr({
+                            src : v.imgPath
+                        });                        
+                    })                                 
+                    
+                },
+                error:()=>{alert("Some netwrok issue")},
+                });
+            });
+        // });
+
+    </script>
+</head>
+<body>
+    <img src="" id="img1">
+
+   
+</body>
+</html>

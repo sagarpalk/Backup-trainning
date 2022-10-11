@@ -1,0 +1,12 @@
+p{
+    border: solid 5px blue;
+    background-color: lightblue;
+    color: darkblue;
+    font-size: larger;
+}
+h2{
+    background-color: black;
+    color: gold;
+    font-size: xx-large;
+    border: solid 4px gold;
+}

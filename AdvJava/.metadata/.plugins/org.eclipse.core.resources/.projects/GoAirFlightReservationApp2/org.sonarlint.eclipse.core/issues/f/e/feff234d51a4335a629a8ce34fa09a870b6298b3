@@ -1,0 +1,82 @@
+
+|	java:S117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¸ûøHĞwRMINORZ
+CODE_SMELL
+|	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÉ™ HÑwRMINORZ
+CODE_SMELL
+	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ƒˆ›ÿÿÿÿÿHÒwRMINORZ
+CODE_SMELL
+|	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú‰†òHÓwRMINORZ
+CODE_SMELL
+	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹°èòÿÿÿÿÿHÔwRMINORZ
+CODE_SMELL
+	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎË„ßşÿÿÿÿHÕwRMINORZ
+CODE_SMELL
+|	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ìÚˆHÖwRMINORZ
+CODE_SMELL
+	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÑÂıÿÿÿÿH×wRMINORZ
+CODE_SMELL
+	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø»´÷úÿÿÿÿHØwRMINORZ
+CODE_SMELL
+{	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½—ï8HÙwRMINORZ
+CODE_SMELL
+|	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÉ™ HÚwRMINORZ
+CODE_SMELL
+	java:S117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ƒˆ›ÿÿÿÿÿHÛwRMINORZ
+CODE_SMELL
+|	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú‰†òHÜwRMINORZ
+CODE_SMELL
+	java:S117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹°èòÿÿÿÿÿHİwRMINORZ
+CODE_SMELL
+	java:S117m"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎË„ßşÿÿÿÿHŞwRMINORZ
+CODE_SMELL
+|	java:S117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ìÚˆHßwRMINORZ
+CODE_SMELL
+	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÑÂıÿÿÿÿHàwRMINORZ
+CODE_SMELL
+	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø»´÷úÿÿÿÿHáwRMINORZ
+CODE_SMELL
+{	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½—ï8HâwRMINORZ
+CODE_SMELL
+v
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¯é«ÏHãwRBLOCKERZBUG
+n
+java:S1854!"=Remove this useless assignment to local variable "userEmail".(ìŞíÌşÿÿÿÿHäwRMAJORZ
+CODE_SMELL
+q
+java:S1854""@Remove this useless assignment to local variable "userPassword".(äÍó¡üÿÿÿÿHåwRMAJORZ
+CODE_SMELL
+d	java:S106"9Replace this use of System.out or System.err by a logger.(áÆğŒHæwRMAJORZ
+CODE_SMELL
+_
+java:S1481!".Remove this unused "userEmail" local variable.(ìŞíÌşÿÿÿÿHçwRMINORZ
+CODE_SMELL
+b
+java:S1481""1Remove this unused "userPassword" local variable.(äÍó¡üÿÿÿÿHéwRMINORZ
+CODE_SMELL
+d	java:S106("9Replace this use of System.out or System.err by a logger.(åï¦¾HëwRMAJORZ
+CODE_SMELL
+c	java:S106+"9Replace this use of System.out or System.err by a logger.(›ª°2HìwRMAJORZ
+CODE_SMELL
+l	java:S1251"<This block of commented-out lines of code should be removed.(¬íöıÿÿÿÿHíwRMAJORZ
+CODE_SMELL
+g	java:S1253"<This block of commented-out lines of code should be removed.(Ûğ¬ÕHîwRMAJORZ
+CODE_SMELL
+d
+java:S1117d"8Rename "user" which hides the field declared at line 17.(Ü¥½¬HïwRMAJORZ
+CODE_SMELL
+i	java:S106w"9Replace this use of System.out or System.err by a logger.(Æ¯½ÏÿÿÿÿÿHğwRMAJORZ
+CODE_SMELL
+l	java:S125x"<This block of commented-out lines of code should be removed.(ùõ’šşÿÿÿÿHñwRMAJORZ
+CODE_SMELL
+b
+java:S1135|"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHòwRINFOZ
+CODE_SMELL
+j	java:S106—"9Replace this use of System.out or System.err by a logger.(Â§¥ìıÿÿÿÿHówRMAJORZ
+CODE_SMELL
+m	java:S125–"<This block of commented-out lines of code should be removed.(ùõ’šşÿÿÿÿHôwRMAJORZ
+CODE_SMELL
+e	java:S106œ"9Replace this use of System.out or System.err by a logger.(ù…¸ÜHõwRMAJORZ
+CODE_SMELL
+c
+java:S1135›"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHöwRINFOZ
+CODE_SMELL

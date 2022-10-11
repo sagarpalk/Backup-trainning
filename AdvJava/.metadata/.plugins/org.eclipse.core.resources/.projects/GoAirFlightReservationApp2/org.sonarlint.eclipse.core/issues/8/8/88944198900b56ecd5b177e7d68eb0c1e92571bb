@@ -1,0 +1,33 @@
+
+i	java:S1063"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿH°xRMAJORZ
+CODE_SMELL
+i	java:S106+"9Replace this use of System.out or System.err by a logger.(™ÌÓşÿÿÿÿH±xRMAJORZ
+CODE_SMELL
+“
+java:S1989<"_Handle the following exceptions that could be thrown by "doGet": ServletException, IOException.(®Ó‘ûÿÿÿÿÿH²xRMINORZVULNERABILITY
+k
+java:S1161!":Add the "@Override" annotation above this method signature(Ïû©ÖûÿÿÿÿH³xRMAJORZ
+CODE_SMELL
+f
+java:S1161;":Add the "@Override" annotation above this method signature(‹¨¯¿HµxRMAJORZ
+CODE_SMELL
+‚
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÙéšäûÿÿÿÿH·xRMAJORZBUG
+U
+java:S1481)")Remove this unused "role" local variable.(›÷âíH¸xRMINORZ
+CODE_SMELL
+‡
+java:S19894"SHandle the following exception that could be thrown by "sendRedirect": IOException.(¼ÒåûÿÿÿÿHºxRMINORZVULNERABILITY
+‡
+java:S19891"SHandle the following exception that could be thrown by "sendRedirect": IOException.(ğ´Ş úÿÿÿÿH»xRMINORZVULNERABILITY
+i	java:S1060"9Replace this use of System.out or System.err by a logger.(ïÄã‡şÿÿÿÿH¼xRMAJORZ
+CODE_SMELL
+l	java:S125*"<This block of commented-out lines of code should be removed.(Ä¢æéüÿÿÿÿH½xRMAJORZ
+CODE_SMELL
+d
+java:S1854)"8Remove this useless assignment to local variable "role".(›÷âíH¾xRMAJORZ
+CODE_SMELL
+
+java:S1989'"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(»¬ÚÂøÿÿÿÿH¿xRMINORZVULNERABILITY
+d	java:S106-"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒHÀxRMAJORZ
+CODE_SMELL

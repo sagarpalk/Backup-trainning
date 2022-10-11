@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SemanticElements-<section></title>
+        <style>
+            section.java{
+                background-color: black;
+                color: gold;
+
+            }
+            section.python{
+                background-color:crimson;
+                color: gold;
+
+            }
+        </style>
+    </head>
+    <body>
+       
+    </body>
+</html>

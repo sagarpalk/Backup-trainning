@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_booking.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./style_home.css">
+    <script src="./script_home.js"></script>
+    <title>Spider-Man booking</title>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo"><a href="bookshow.web.app" style="text-decoration: none; color: #4dbf00;">Bookyourshow</h1></a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><input type="search" class="search" name="search" placeholder="   Search any movie you want to book ...."><a href="#"><i class="search-icon fas fa-search"></i></a></li>
+                    <li class="menu-list-item active"><a href="bookshow.web.app">Home</a></li>
+                    <li class="menu-list-item"><a style="text-decoration: none;" href="bookyourshow/all_movies.html">Movies</a></li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">
+                    <span>Hi,</span>
+                    <span id="result"> </span>
+                    <a style="text-decoration: none;" href="bookyourshow/login.html" id="login">Login</a>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    <div class="movie">
+        <div class="movie-banner"><img class="movie-img" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/snh_online_6072x9000_posed_01.jpg" alt=""></div>
+        <div class="movie-title" id="movie_title" name="Spider-Man">Spider Man - No Way Home</div><input type="hidden" value="SPIDER-MAN : No Way Home" name="Sipder-man" id="txt">
+        <div class="movie-dis">Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming (2017) and Spider-Man: Far From Home (2019), and the 27th film in the Marvel Cinematic Universe (MCU).</div>
+        <div class="movie-btn">2D</div>
+        <div class="movie-btn1">3D</div>
+        <div class="movie-btn2">ENGLISH</div>
+        <div class="movie-time">3h 14m <span> &nbsp;&nbsp; •  </span>&nbsp;&nbsp;<a> Comedy&nbsp;</a><span>,</span><a> &nbsp;Si-fi</a>,</span><a> &nbsp;Adventure</a><span> &nbsp;&nbsp; •  </span> &nbsp;&nbsp; U/A<span> &nbsp;&nbsp; •  </span> &nbsp;&nbsp; 26 Jan, 2022</div>
+        <div><a href="https://youtu.be/pKctjlxbFDQ"><button class="movie-trailer">Watch Trailer</button></a> </div>
+        <div><form action="date.html"><input class="movie-book" type="submit" value="BOOK NOW" onclick="passvalues();"></form></div>
+    </div>
+</body>
+<script>
+    function passvalues() {
+var moviename=document.getElementById("txt").value;
+localStorage.setItem("textvalue",moviename);
+return false;            
+}
+</script>
+
+</html>
